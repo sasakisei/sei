@@ -1,0 +1,15 @@
+<h1>Nextenbukai#index</h1>
+<%= link_to "次の演舞会予定",  new_nextenbukai_path %>
+<div class="nextenbukais-container">
+    <% @nextenbukais.each do |t| %>
+        <div class="nextenbukai">
+            <%= t.name %>
+            <%= t.created_at %>
+            <%= link_to "詳細へ", nextenbukai_path(t.id) %>
+            <%= link_to "編集する", edit_nextenbukai_path(t.id) %>
+            <%= button_to "削除する", tweet_path(t.id), method: :delete %>
+        </div>
+    <% end %>
+</div>　　
+<p>Find me in app/views/nextenbukai/index.html.erb</p>
+    

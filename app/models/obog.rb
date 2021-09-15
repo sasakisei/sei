@@ -1,0 +1,2 @@
+class Obog < ApplicationRecord
+end

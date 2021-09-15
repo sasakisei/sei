@@ -1,0 +1,10 @@
+<h1>Nextenbukai#show</h1>
+<p>Find me in app/views/nextenbukai/show.html.erb</p>
+<h1>次の演舞会予定</h1>
+<h3>演舞会詳細</h3>
+<div class="nextenbukai">
+    <p><%= @nextenbukai.body %></p>
+    <p><%= @nextenbukai.created_at %></p>
+</div>
+<%= link_to "次の演舞会予定一覧に戻る", nextenbukais_path %>
+<%= link_to "編集する", edit_nextenbukai_path(@nextenbukai.id) %>

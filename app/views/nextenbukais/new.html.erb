@@ -1,0 +1,11 @@
+<h1>Nextenbukai#new</h1>
+<h1>次の演舞会予定</h1>
+<h3>予約できます</h3>
+<%= form_for @nextenbukai do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :size => 140 %>
+  </div>
+  <%= f.submit "表示する" %>
+<% end %>
+<%= link_to "次の演舞会一覧に戻る", nextenbukais_path %>

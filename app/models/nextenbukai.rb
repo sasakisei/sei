@@ -1,0 +1,2 @@
+class Nextenbukai < ApplicationRecord
+end
